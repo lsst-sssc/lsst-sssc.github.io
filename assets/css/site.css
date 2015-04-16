@@ -120,16 +120,9 @@ section.footer p{
     display: block;
 }
 
-section#cambridge{
-    background-image: url(../images/cambridge.jpg);
-}
 
-section#fountain{
-    background-image: url(../images/fountain.jpg);
-}
-
-section#ioa{
-    background-image: url(../images/IoA-Cambridge.jpg);
+section#seattle{
+    background-image: url(../images/Seattle.jpg);
 }
 
 section#lsst{
@@ -145,13 +138,6 @@ section#lsst-logo{
     background-image: url(../images/lsst.jpg);
 }
 
-section#ioa-night{
-    background-image: url(../images/IoA-night.jpg);
-}
-
-section#cambridge-kings{
-    background-image: url(../images/Cambridge-Kings.jpg);
-}
 
 
 section#uwcampus{
