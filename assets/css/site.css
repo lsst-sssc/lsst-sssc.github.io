@@ -153,9 +153,9 @@ section#lsst-singledepth{
 
 
 section#uwcampus{
-    background-image: url(../images/UW-<.jpg);
-    padding-top: 2em;
-    padding-bottom: 2em;
+    background-image: url(../images/UW.jpg);
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 ::selection {
