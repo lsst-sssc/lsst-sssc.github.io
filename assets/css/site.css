@@ -140,8 +140,9 @@ section#lsst-logo{
 
 section#lsst-footprint{
     background-image: url(../images/enigma_gri.png);
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
-
 
 
 section#uwcampus{
