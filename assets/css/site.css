@@ -138,6 +138,10 @@ section#lsst-logo{
     background-image: url(../images/lsst.jpg);
 }
 
+section#lsst-footprint{
+    background-image: url(../images/enigma_gri.png);
+}
+
 
 
 section#uwcampus{
