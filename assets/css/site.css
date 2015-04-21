@@ -42,7 +42,7 @@ nav.main_nav{
 }
 
 section{
-    border-bottom: 15px solid #99cc00;
+    border-bottom: 12px solid rgba(160,255,80,0.5);
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -50,7 +50,7 @@ section{
     -o-background-size: cover;
     background-size: cover;
     padding-top: 8em;
-    padding-bottom: 8em;
+    padding-bottom: 11em;
 }
 
 section#top{
@@ -91,6 +91,7 @@ section h4{
 
 section.text{
     border-bottom: none;
+    #5px solid rgb(130,200,0,0.5);
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -116,7 +117,7 @@ section.footer{
 section.footer p{
     font-size: 0.7em;
     text-align: center;
-    color: #222222;
+    color: #222222; 
     display: block;
 }
 
@@ -139,9 +140,15 @@ section#lsst-logo{
 }
 
 section#lsst-footprint{
-    background-image: url(../images/enigma_gri.png);
-    padding-top: 20pix;
-    padding-bottom: 20pix;
+    background-image: url(../images/enigma_gri_nvisits.png);
+    padding-top:10em;
+    padding-bottom:11em;
+}
+
+section#lsst-singledepth{
+    background-image: url(../images/enigma_gri_depth.png);
+    padding-top:10em;
+    padding-bottom:11em;
 }
 
 
@@ -201,7 +208,7 @@ img.bioPic{
 
 img.icon{
    margin-left: 0.2em;
-   height: 16px;
+   height: 10px;
    opacity: 0.3;
 }
 
