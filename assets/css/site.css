@@ -113,12 +113,12 @@ section.footer{
     padding-bottom: 0em;
 }
 
-#section.footer p{
-#    font-size: 0.7em;
-#    text-align: center;
-#    color: #222222;
-#    display: block;
-#}
+section.footer p{
+    font-size: 0.7em;
+    text-align: center;
+    color: #222222;
+    display: block;
+}
 
 
 section#seattle{
@@ -140,6 +140,8 @@ section#lsst-logo{
 
 section#lsst-footprint{
     background-image: url(../images/enigma_gri.png);
+    padding-top: 20pix;
+    padding-bottom: 20pix;
 }
 
 
