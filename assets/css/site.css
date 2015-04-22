@@ -55,6 +55,8 @@ section{
 
 section#top{
     background-image: url(../images/LSST-site.jpg);
+    padding-top:6em;
+    padding-bottom:4em;
 }
 
 section#top h1{
@@ -134,6 +136,13 @@ section#mirror{
     background-image: url(../images/mirror-casting-banner.jpg);
 }
 
+section#bluemirror{
+    background-image: url(../images/M1M3withStorageCoating.jpg);
+}
+
+section#lsstobs{
+    background-image: url(../images/lsst_obs.jpg);
+}
 
 section#lsst-logo{
     background-image: url(../images/lsst.jpg);
@@ -142,13 +151,13 @@ section#lsst-logo{
 section#lsst-footprint{
     background-image: url(../images/enigma_gri_nvisits.png);
     padding-top:10em;
-    padding-bottom:11em;
+    padding-bottom:10em;
 }
 
 section#lsst-singledepth{
     background-image: url(../images/enigma_gri_depth.png);
     padding-top:10em;
-    padding-bottom:11em;
+    padding-bottom:10em;
 }
 
 
