@@ -150,14 +150,16 @@ section#lsst-logo{
 
 section#lsst-footprint{
     background-image: url(../images/enigma_gri_nvisits.png);
-    padding-top:10em;
-    padding-bottom:10em;
+    background-size: 100%;
+    padding-top:15em;
+    padding-bottom:12em;
 }
 
 section#lsst-singledepth{
     background-image: url(../images/enigma_gri_depth.png);
-    padding-top:10em;
-    padding-bottom:10em;
+    background-size: 100%;
+    padding-top:15em;
+    padding-bottom:12em;
 }
 
 
