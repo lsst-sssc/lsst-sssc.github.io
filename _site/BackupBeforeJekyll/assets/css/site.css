@@ -1,0 +1,278 @@
+body{
+    font: 16px 'Lato', sans-serif;
+    color: #222222;
+    background: #eeeeee;
+    margin: 0;
+    display: block;
+
+}
+
+div.block{
+    max-width: 800px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+nav.main_nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+    text-align: center;
+
+}
+
+.main_nav ul{
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.main_nav li{
+    float: left;
+    width: 16.6%;
+}
+
+.main_nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section{
+    border-bottom: 12px solid rgba(160,255,80,0.5);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 8em;
+    padding-bottom: 11em;
+}
+
+section#top{
+    background-image: url(../images/LSST-site.jpg);
+    padding-top:6em;
+    padding-bottom:4em;
+}
+
+section#top h1{
+    font-weight: 500;
+    font-size: 3em;
+    color: ##000000;
+    letter-spacing: 0;
+    margin: 1em 0;
+    text-align: center;
+}
+
+section#top h2{
+    font-weight: 500;
+    font-size: 2em;
+    color: ##000000;
+    letter-spacing: 0;
+    margin: 1em 0;
+    text-align: center;
+    position: relative;
+    top:-50px;
+}
+
+section h2{
+    text-align: left;
+}
+
+section h3{
+    text-align: left;
+}
+
+section h4{
+    text-align: left;
+}
+
+section.text{
+    border-bottom: none;
+    #5px solid rgb(130,200,0,0.5);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+section.text p{
+    text-align: left;
+    font-size: 1.2em;
+    color: #222222;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+section.footer{
+    border-bottom: none;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+section.footer p{
+    font-size: 0.7em;
+    text-align: center;
+    color: #222222; 
+    display: block;
+}
+
+
+section#seattle{
+    background-image: url(../images/Seattle.jpg);
+}
+
+section#lsst{
+    background-image: url(../images/LSST-site.jpg);
+}
+
+section#mirror{
+    background-image: url(../images/mirror-casting-banner.jpg);
+}
+
+section#bluemirror{
+    background-image: url(../images/M1M3withStorageCoating.jpg);
+}
+
+section#lsstobs{
+    background-image: url(../images/lsst_obs.jpg);
+}
+
+section#lsst-logo{
+    background-image: url(../images/lsst.jpg);
+}
+
+section#lsst-footprint{
+    background-image: url(../images/enigma_gri_nvisits.png);
+    background-size: 100%;
+    padding-top:15em;
+    padding-bottom:12em;
+}
+
+section#lsst-singledepth{
+    background-image: url(../images/enigma_gri_depth.png);
+    background-size: 100%;
+    padding-top:15em;
+    padding-bottom:12em;
+}
+
+
+section#uwcampus{
+    background-image: url(../images/UW.jpg);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+::selection {
+	background: #99cc00; /* Safari */
+	}
+::-moz-selection {
+	background: #99cc00; /* Firefox */
+}
+
+a {
+  color: #669900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #99cc00;
+}
+
+a.active {
+  color: #99cc00;
+}
+
+div.bio{
+    width: 10.25%;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+div.bio h3{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+div.bio p{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0px;
+}
+
+img.logo {
+   height: 80px;
+}
+
+img.bioPic{
+    width: 100%;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+img.icon{
+   margin-left: 0.2em;
+   height: 10px;
+   opacity: 0.3;
+}
+
+img.icon:hover {
+   opacity: 0.8;
+}
+
+table, th, td {
+   vertical-align: top;
+   text-align: left;
+   padding-left: 1.5em;
+}
+
+.RegButton {
+	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #99cc00));
+	background:-moz-linear-gradient(top, #77b55a 5%, #99cc00 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #99cc00 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #99cc00 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #99cc00 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #99cc00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#99cc00',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.RegButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #99cc00), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #99cc00 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #99cc00 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #99cc00 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #99cc00 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #99cc00 5%, #77b55a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#99cc00', endColorstr='#77b55a',GradientType=0);
+	background-color:#99cc00;
+}
+a.RegButton:hover{
+        color: #ffffff;
+}
+.RegButton:active {
+	position:relative;
+	top:1px;
+}
