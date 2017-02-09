@@ -1,2 +1,12 @@
 _sites
 _sites/*
+.DS_Store
+.idea/encodings.xml
+.idea/lsst-sssc.github.io.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+_site/BackupBeforeJekyll/
+_site/Files/
+_site/README.md
+_site/index.html
