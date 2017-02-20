@@ -10,3 +10,5 @@ _site/BackupBeforeJekyll/
 _site/Files/
 _site/README.md
 _site/index.html
+/dataProductsHTML/HH_sciCases_Feb20.txt
+/dataProductsHTML/proc_sci_cases.py

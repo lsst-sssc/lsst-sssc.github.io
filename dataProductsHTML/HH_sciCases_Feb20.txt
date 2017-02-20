@@ -1,0 +1,161 @@
+
+1
+Phase functions of asteroids
+Summary: calculation of original and modified IAU phase function parameters (i.e., H,G; H,G1,G2; H,G12) (and maybe also Hapke model parameters?) for asteroids
+
+Procedure: identify all asteroids for which a minimum number of observations exist; retrieve calibrated photometry for a given filter; compute equivalent reduced magnitudes for each apparent magnitude measurement (i.e., for R=Δ=1 AU); compute best-fit phase function parameters for phase function formats of interest
+
+Data fields needed: observation metadata (filter), L1/L2 products (photometry), observation geometry (R, Delta, phase angle); output to custom derived object parameters
+2
+Phase functions of inactive comet nuclei
+Summary: calculation of original and modified IAU phase function parameters (i.e., H,G; H,G1,G2; H,G12) (and maybe also Hapke model parameters?) for inactive comet nuclei
+
+Procedure: identify all known comets for which a minimum number of observations exist where extendedness parameters indicate [mostly] stellar appearances and/or a minimum heliocentric distance criterion is satisfied; retrieve calibrated photometry for a given filter; compute equivalent reduced magnitudes for each apparent magnitude measurement (i.e., for R=Δ=1 AU); compute best-fit phase function parameters for phase function formats of interest
+
+Data fields needed: observation metadata (filter), L1/L2 products (photometry), observation geometry (R, Delta, phase angle, true anomaly), custom derived detection parameters (extendedness parameters); output to custom derived object parameters
+3
+Rotational lightcurves of asteroids
+Summary: determination of best-fit rotational lightcurves for asteroids using phase dispersion minimization from sparse photometry
+
+Procedure: identify all asteroids for which a minimum number of observations exist; retrieve calibrated photometry for a given filter; compute equivalent absolute magnitudes for each apparent magnitude measurement (i.e., for R=Δ=1 AU and phase angle = 0, using best-fit H,G parameter values where available); perform PDM analysis on resulting data
+
+Data fields needed: observation metadata (filter), L1/L2 products (photometry), observation geometry (R, Delta, phase angle), custom derived object parameters (H,G; H,G1,G2; H,G12); output to custom derived object parameters
+4
+Rotational lightcurves of inactive comet nuclei
+Summary: determination of best-fit rotational lightcurves for inactive or nearly inactive comet nuclei using phase dispersion minimization from sparse photometry
+
+Procedure: identify all known comets for which a minimum number of observations exist where extendedness parameters indicate [mostly] stellar appearances and/or a minimum heliocentric distance criterion is satisfied; retrieve calibrated photometry for a given filter; compute equivalent absolute magnitudes for each apparent magnitude measurement (i.e., for R=Δ=1 AU and phase angle = 0, using best-fit H,G parameter values where available); perform PDM analysis on resulting data
+
+Data fields needed: observation metadata (filter), L1/L2 products (photometry), observation geometry (R, Delta, phase angle), custom derived detection parameters (extendedness parameters), custom derived object parameters (H,G; H,G1,G2; H,G12); output to custom derived object parameters
+5
+Asteroid shape models and spin parameters
+Summary: derive shape models and determine spin pole parameters for asteroids using sparse photometry
+
+Procedure:
+
+Data fields needed:
+6
+Inactive comet nucleus shape models and spin parameters
+Summary: derive shape models and determine spin pole parameters for asteroids using sparse photometry
+
+Procedure:
+
+Data fields needed:
+7
+Asteroid color determination + taxonomic classification
+Summary: determination of asteroid colors and likely taxonomic type
+
+Procedure: retrieve H magnitude results from phase function determinations for all asteroids for which multi-filter H magnitudes have been computed, and where H magnitude uncertainties are less than a given threshold; compute average colors from these multi-filter H magnitude values
+
+Data fields needed:
+8
+Inactive comet nucleus color determination + taxonomic classification
+Summary: determination of colors of inactive (or nearly inactive) comet nuclei and likely taxonomic type
+
+Procedure: retrieve H magnitude results from phase function determinations for all comets for which multi-filter H magnitudes for their nuclei have been computed, and where H magnitude uncertainties are less than a given threshold; compute average colors from these multi-filter H magnitude values
+
+Data fields needed:
+9
+Cometary activity search via photometry
+Summary: identify new or known moving objects (potentially filtered by specific orbital parameters, observational circumstances, physical properties, or family membership) with measured magnitudes significantly brighter than predicted (taking into account expected rotational variation, if available) given geometric circumstances of the corresponding observation, and flag as potentially exhibiting cometary activity in the form of unresolved dust or gas emission
+
+Procedure:
+
+Data fields needed:
+10
+Cometary activity search via PSF comparison
+Summary: identify new or known moving objects (potentially filtered by specific orbital parameters, observational circumstances, physical properties, or family membership) with measured PSF widths larger than those of neighboring field stars, and flag as potentially exhibiting cometary activity
+
+Procedure:
+
+Data fields needed:
+11
+Cometary activity search via comparison of                multi-aperture photometry
+Summary: identify new or known moving objects (potentially filtered by specific orbital parameters, observational circumstances, physical properties, or family membership) for which the ratio of flux measured for a larger aperture and flux measured for a smaller aperture (i.e., a larger aperture able to capture more extended emission and a smaller central aperture) is larger than the equivalent photometry ratio measured for local field stars, and flag as potentially exhibiting cometary activity
+
+Procedure:
+
+Data fields needed:
+12
+Cometary activity search via azimuthal search for directed emission
+Summary: identify new or known moving objects (potentially filtered by specific orbital parameters, observational circumstances, physical properties, or family membership) for which an azimuthal search for directed emission (details TBD) indicate the potential presence of a cometary tail or trail, and flag as potentially exhibiting cometary activity
+
+Procedure:
+
+Data fields needed:
+13
+Cometary activity search via comparison of fluxes measured from PSF modeling and optimized photometry apertures
+Summary: identify new or known moving objects (potentially filtered by specific orbital parameters, observational circumstances, physical properties, or family membership) for which the flux measured using an optimized photometry aperture (e.g., one determined via curve-of-growth analysis) exceeds the flux measured from a best-fit PSF model by a given percentage (i.e., indicating significant excess deviation from a stellar PSF profile), and flag as potentially exhibiting cometary activity
+
+Procedure:
+
+Data fields needed:
+14
+Afrho dependence for comets of different dynamical types and at different heliocentric distances
+Summary: compare Afrho parameter values for comets of a variety of dynamical types and at various heliocentric distances
+
+Procedure:
+
+Data fields needed:
+15
+Activity evolution for individual comets via tracking of Afrho values
+Summary: monitor the evolution of Afrho parameter values measured for individual comets at different orbit positions
+
+Procedure:
+
+Data fields needed:
+16
+Activity evolution for individual comets via tracking of excess dust mass
+Summary: monitor the evolution of excess dust mass measured for individual comets at different orbit positions for comets for which nucleus sizes are known (and therefore excess dust mass can be computed by subtracting the expected flux contribution from the nucleus from the total flux of the comet measured using a optimized photometry aperture determined via curve-of-growth analysis)
+
+Procedure:
+
+Data fields needed:
+17
+Asteroid/comet disruption or disintegration search
+Summary: identification of known asteroids or comets that are significantly fainter than expected, or even undetectable (taking into account previously measured or estimated rotational brightness variations), and flag as potentially having undergone a recent sub-catastrophic or catastrophic disruption
+
+Procedure:
+
+Data fields needed:
+18
+Asteroid family identification
+Summary: hierarchical clustering method (HCM) analysis of asteroidal proper elements to identify previously unrecognized asteroid families
+
+Procedure:
+
+Data fields needed:
+19
+Mass computation by orbit deflections caused by close asteroid-asteroid encounters
+Summary:
+
+Procedure:
+
+Data fields needed:
+20
+Non-gravitational perturbation detection of asteroids or comets
+Summary:
+
+Procedure:
+
+Data fields needed:
+21
+Comet outburst detection via calculation of deviation from magnitudes predicted by sublimation model(s)
+Summary:
+
+Procedure:
+
+Data fields needed:
+22
+Comet outburst detection via calculation of deviation of measured photometry from recent photometric evolution
+Summary: Flagging of potential cometary outbursts via the calculation of the deviation of measured photometry from recent photometric evolution (e.g., photometry measured for the last five most recent observations of the same comet)
+
+Procedure:
+
+Data fields needed:
+23
+Comet coma color dependence on distance from nucleus
+Summary: Identification of color variations in cometary coma with varying distance from the nucleus
+
+Procedure: 
+
