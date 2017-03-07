@@ -23,10 +23,10 @@ for i in range(1, len(data)):
     if "Queen's University, Belfast" in data[i]:
         affil = (s[3]+s[4]).replace('"','')
         email = s[5]
-        sciInterests = "".join(s[6:]).replace('"','')
+        sciInterests = ", ".join(s[6:]).replace('"','')
     else:
         affil = s[3]
-        sciInterests = "".join(s[5:]).replace('"','')
+        sciInterests = ", ".join(s[5:]).replace('"','')
 
     #name
     html[36] = '                            '+html[36].replace("The member's name.", name)
