@@ -29,13 +29,13 @@ for i in range(1, len(data)):
         sciInterests = ", ".join(s[5:]).replace('"','')
 
     #name
-    html[39] = '                            '+html[39].replace("The member's name.", name)
+    html[40] = '                            '+html[40].replace("The member's name.", name)
     #affill
-    html[40] = html[40].replace("The member's affiliation.", affil)[4:]
+    html[41] = html[41].replace("The member's affiliation.", affil)[4:]
     #contact
-    #html[41] = html[41].replace("Email address.", email)[4:]
+    #html[42] = html[42].replace("Email address.", email)[4:]
     #summary
-    html[41] = html[41].replace("A short 3-4 sentence description of the member's science interests.", sciInterests)[4:]
+    html[42] = html[42].replace("A short 3-4 sentence description of the member's science interests.", sciInterests)[4:]
 
     print sciInterests
     with open('{}.html'.format(fileName),'w+') as outHan:
