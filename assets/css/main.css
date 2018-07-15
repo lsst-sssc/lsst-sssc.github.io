@@ -2093,7 +2093,7 @@
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #9a9a9a;
+			color: #585353;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2689,7 +2689,7 @@
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			background-color: #9a9a9a !important;
+			background-color: #585353 !important;
 			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
 			color: #fff !important;
 			cursor: default;
