@@ -52,66 +52,26 @@
 						published in the Research Notes of the American Astronomical Society, presents this list of LSST community software development tasks.</p>
 
 					
-					 <H2> The LSST Moving Object Pipeline System (MOPS) </H2>
-						<p> The LSST Moving Object Pipeline System (MOPS) will be the main software to identify moving Solar System objects in LSST data.
-						MOPS is a deliverable from LSST data management. This effort is being lead by the LSST Solar System Processing Team based at the University of Washington.
-					</p>
-					
+					 <H2> The Rubin Observatory Solar System Processing Pipelines</H2>
+						<p> The Rubin Observatory's Solar System Processing (SSP) pipelines will be the main software to identify moving Solar System objects in LSST data.
+						SSP is a deliverable from Rubin Observatory's data management team. This effort is being lead by the Rubin Observatory's Solar System Processing Team based at the University of Washington.
+					      </p>
+							
 					<div align="center">
-					<img class="contain" src="images/mops_linking.png" alt="yield" style="width:766px;height:544px">
+					<img class="contain" src="images/mops_linking.png" alt="yield" style="width:818px;height:444px">
 					<p>Image Credit: Mario Jurić </p>
 					
-				     <img class="contain" src="images/daily_processing_scheme.png" alt="yield" style="width:766px;height:544px">
-					<p>Proposed MOPS processing cycle - Image Credit: Mario Jurić </p>
+				     <img class="contain" src="images/daily_processing_scheme.png" alt=" Rubin Observatory System System Processing Schematic" style="width:818px;height:444px">
+					<p>Rubin Observatory Solar System Processing Schematic - Image Credit: Mario Jurić </p>
 						
 						
 					</div>
+				
+				
 					
 	
 					
-				<H3> MOPS Frequently Asked Questions (FAQ)</H3>
-				<p>
-					<b> What will be in the catalog? Can we still change what’s going to be measured for Solar System Objects? </b>
-					<br>
-					The <a href="https://docushare.lsstcorp.org/docushare/dsweb/Get/LSE-163/">Data Products Definition Document (DPDD)</a> defines the outline of what the catalog will contain, but adding more detail via discussions with the SSSC is on-going.
-					We can make changes as long as they don’t affect budget and schedule, but before the end of 2018 the bulk of the data product format/items should be set. 
-
-					<br>
-					<br>
-					<b> What will you do with trailed sources & non-linear motion (nearby/geocentric)?</b>
-					<br>
-					Trailed sources will be detected and characterized, but we will not attempt to fit anything other than heliocentric/barycentric fits. 
-					N.b. trailed sources should be easy to pick out of the alert stream, in real-time.
-					<br>
-					<br>
-					<b> Will MOPS do forced photometry of Solar System objects? </b>
-					<br>
-				        No. 
-					<br>
-					<br>
-					<b>  Can we expect comets, including bright ones, to be treated like any other source in the sky, or if there may be biases against them? </b>
-					<br> 
-					  Difference image source detection will find anything that reaches the 5-sigma threshold after convolving with a PSF (point spread function); unless it’s both a very faint (low surface brightness) and very extended comet, it will be detected. 
-					  Comet candidates should be easy to detect very early, even before MOPS links an orbit; in the alert stream one can look for adjacent, single-apparition, extended objects that appear in 20-minute visit pairs.
-					<br>
-					<br>
-					<b> How does MOPS centroid on comet comae and does it avoid astrometry biases due to coma and tail asymmetries? </b>
-					<br> 
-					The centroiding algorithm derives from the SDSS (Sloan Digital Sky Survey) one, that’s been designed to appropriately centroid galaxies that may also exhibit asymmetries.
-					<br>
-					<br>
-					<b> Is there going to be a MOPS built specific to each population (Inner/Outer/NEO)? </b>
-					<br>
-					Not unless we have to to meet requirements.
-					<br>
-					<br>
-					<b> What cadence is needed for MOPS to link tracklets and detect Solar System objects? </b>
-					<br>
-					To guarantee discovery with 95% confidence, we need three tracklets (each defined as a pair of observations taken in the same night taken no more than 90 minutes apart) taken over 15 days. The high-level MOPS tracklet requirement is OSS-REQ-0159 in <a href="http://ls.st/LSE-30" >LSE-30 </a>.
-					 The maximum size of the search window over which the tracklets need to be linked is defined in <a href="https://msweb.lsstcorp.org/docushare/dsweb/Get/Version-24308/LDM-156.pdf"> LDM-156 </a>  as 15 days (and in <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1711.10621"> Jones et al. 2018</a>), with a stretch goal of 30 days.
 				
-		
-				</p>	
 				</div>
 			</section>
 
